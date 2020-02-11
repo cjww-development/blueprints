@@ -5,19 +5,46 @@ body {
   color: #FFFFFF;
 }
 
+.oneth {
+  width: 100%;
+  height: 100%;
+}
+
+.thirds {
+  width: 33.33%;
+  height: 100%;
+  display: inline-flex;
+}
+
 .navbar {
   width: 100%;
   height: 50px;
   display: flex;
 }
 
-.people-in-room {
+.product-title {
+  background-color: #525252;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.title {
+  text-align: center;
+  vertical-align: middle;
+}  
+
+.bottom {
     position: fixed;
     bottom:0%;
     width:100%;
     opacity: 1;
     text-align: center;
     vertical-align: middle;
+    overflow: hidden;
 }
 
 .people {
@@ -34,6 +61,7 @@ body {
   vertical-align: middle;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
 }
 
 .image {
@@ -43,25 +71,8 @@ body {
 }
 
 .name {
-  padding-top: 0px;
-}
-
-.oneth {
-  width: 100%;
-  height: 100%;
-}
-
-.product-title {
-  background-color: #525252;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-.title {
-  text-align: center;
-  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 60px;
+  overflow: hidden;
 }
