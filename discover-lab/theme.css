@@ -4,6 +4,8 @@ body {
   display: block;
   color: #FFFFFF;
   overflow: hidden;
+  margin:0;
+  padding:0;
 }
 
 .oneth {
@@ -14,17 +16,20 @@ body {
 .thirds {
   width: 33.33%;
   height: 100%;
-  display: inline-flex;
 }
 
 .navbar {
   width: 100%;
   height: 50px;
   display: flex;
+  /* border-top: 2px solid #7E3875; */
+  border-top: 2px solid #106DAC;
+  position: absolute;
 }
 
 .product-title {
-  background-color: #202020;
+  /* background-color: #7E3875; */
+  background-color: #106DAC;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -38,21 +43,47 @@ body {
   vertical-align: middle;
 }
 
+.room-code {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.welcome {
+  font-size: 1em;
+}
+
+.code {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 3em;
+}
+
+.host {
+  font-size: 0.5em;
+}
+
 .bottom {
     position: fixed;
     bottom:0%;
     width:100%;
     opacity: 1;
-    text-align: center;
-    vertical-align: middle;
+    /* text-align: center;
+    vertical-align: middle; */
     overflow: hidden;
 }
 
+/* #106DAC */
+
 .people {
   display: inline-flex;
-  background-color: #202020;
-  border-top-left-radius: 50px;
+  flex-direction: row;
+  background-color: #25273A;
   border-top-right-radius: 50px;
+  max-width: 400px;
+  overflow: scroll;
 }
 
 .person {
@@ -68,9 +99,9 @@ body {
 .image {
   width: 40px;
   height: 40px;
-  border:5px solid #4301FF;
+  border:5px solid #106DAC;
   border-radius: 50%;
-  background: #1E1243;
+  background: #083656;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +134,7 @@ body {
 .toolbar {
   width: 3%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 0px;
@@ -110,26 +142,58 @@ body {
 
 .toolbar-btn {
   width: 100%;
-  background-color: #0C0032;
-  border: 1px solid #3500D3;
+  background-color: #25273A;
+  border: 2px solid #106DAC;
   text-align: center;
   padding-top: 100%;
   position: relative;
+  margin-top: 5px;
 }
 
 .icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
   font-size: 2em;
 }
 
 .window-area {
-  width: 80%;
+  width: 97%;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
 }
 
-.chat-window {
-  background-color: yellow;
-  width: 15%;
+
+
+
+.presenter-window {
+  /* background-color: #7E3875; */
+  background-color: #106DAC;
+  position: absolute;
+}
+
+.file-name {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.file-holder {
+  width: 500px;
+  height: 400px;
+}
+
+.tool-tray {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tool-icon {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.5em;
 }
