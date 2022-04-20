@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatekeeper</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body>
+    <header>
+      <a href="/gatekeeper/index.html" class="brand">
+        <span class="material-icons brand-icon">lock</span>
+        Gatekeeper
+      </div>
+      <nav class="desktop-menu">
+        <ul class="nav-right">
+          <li>
+            <a class="nav-button nav-login" href="/gatekeeper/login.html">Login</a>
+          </li>
+          <li>
+            <a class="nav-button nav-register" href="/gatekeeper/register.html">Register</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-menu">
+        <div class="hamburger">
+          <input type="checkbox" id="menu-toggle" onclick="toggleClass('mobileLinks', 'open')">
+          <label for="menu-toggle" class="hamburger">
+            <span class="bun bun-top">
+              <span class="bun-crust bun-crust-top"></span>
+            </span>
+            <span class="bun bun-bottom">
+              <span class="bun-crust bun-crust-bottom"></span>
+            </span>
+          </label>
+        </div>
+        <ul id="mobileLinks" class="mobile-links">
+          <li>
+            <a class="nav-button nav-login" href="/gatekeeper/login.html">Login</a>
+          </li>
+          <li>
+            <a class="nav-button nav-register" href="/gatekeeper/register.html">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="login-container">
+        <div class="login-top">
+          <h1 class="main-title">Login</h1>
+          <hr>
+          <p id="login-lede">Login here to access your account and services</p>
+        </div>
+        <div class="login-form">
+          <form action="/gatekeeper/login.html">
+            <div class="userid-input">
+              <label for="userid" class="invisible">Username or email</label>
+              <input type="text" class="text-input" id="userid" name="userid" placeholder="Username or email">
+            </div>
+            <div class="password-input">
+              <label for="userid" class="invisible">Password</label>
+              <input type="password" class="text-input" id="password" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="login-button">Login</button>
+          </form>
+        </div>
+        <div class="login-help">
+          <ul>
+            <li>
+              <a href="/gatekeeper/register.html">Need an account? Register here</a>
+            </li>
+            <li>
+              <a href="/gatekeeper/forgot-password.html">Forgotten your password</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>

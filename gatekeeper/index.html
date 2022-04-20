@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatekeeper</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body>
+    <header>
+      <a href="/gatekeeper/index.html" class="brand">
+        <span class="material-icons brand-icon">lock</span>
+        Gatekeeper
+      </div>
+      <nav class="desktop-menu">
+        <ul class="nav-right">
+          <li>
+            <a class="nav-button nav-login" href="/gatekeeper/login.html">Login</a>
+          </li>
+          <li>
+            <a class="nav-button nav-register" href="/gatekeeper/register.html">Register</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-menu">
+        <div class="hamburger">
+          <input type="checkbox" id="menu-toggle" onclick="toggleClass('mobileLinks', 'open')">
+          <label for="menu-toggle" class="hamburger">
+            <span class="bun bun-top">
+              <span class="bun-crust bun-crust-top"></span>
+            </span>
+            <span class="bun bun-bottom">
+              <span class="bun-crust bun-crust-bottom"></span>
+            </span>
+          </label>
+        </div>
+        <ul id="mobileLinks" class="mobile-links">
+          <li>
+            <a class="nav-button nav-login" href="/gatekeeper/login.html">Login</a>
+          </li>
+          <li>
+            <a class="nav-button nav-register" href="/gatekeeper/register.html">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+  <script src="main.js"></script>
+</html>
